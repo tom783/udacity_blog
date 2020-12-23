@@ -1,0 +1,102 @@
+main {
+  padding: 20px;
+}
+
+.post {
+  position: relative;
+  padding: 20px;
+  height: 100%;
+  background-color: #dfe4ea;
+}
+
+.post-title {
+  text-indent: 10px;
+  line-height: 50px;
+  font-size: 24px;
+  border-bottom: 1px solid #2f3542;
+}
+
+.post-info {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.post-cont {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.back-page {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.back-page::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 1px;
+  background-color: black;
+  transform: rotate(-45deg) translateY(-5px);
+}
+
+.back-page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 1px;
+  background-color: black;
+  transform: rotate(45deg) translateY(5px);
+}
+
+@media screen and (max-width: 1440px) {
+  main {
+    padding: 1.38vw;
+  }
+
+  .post {
+    padding: 1.38vw;
+  }
+
+  .post-title {
+    text-indent: 0.69vw;
+    line-height: 3.47vw;
+    font-size: 1.66vw;
+  }
+
+  .post-info {
+    font-size: 1.25vw;
+    margin-top: 0.69vw;
+  }
+
+  .post-cont {
+    font-size: 1.25vw;
+    margin-top: 0.69vw;
+  }
+
+  .back-page {
+    right: 1.38vw;
+    bottom: 1.38vw;
+    font-size: 1.38vw;
+    padding-left: 1.38vw;
+  }
+
+  .back-page::before {
+    width: 0.69vw;
+    transform: rotate(-45deg) translateY(-0.34vw);
+  }
+
+  .back-page::after {
+    width: 0.69vw;
+    transform: rotate(45deg) translateY(0.34vw);
+  }
+}

@@ -1,0 +1,175 @@
+header {
+  height: 300px;
+  background: url("../img/towards-the-garden-1269304_1920.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1085px 335px;
+  grid-template-rows: 300px minmax(701px, auto) 200px;
+  grid-template-areas:
+    "header header"
+    "main nav"
+    "footer footer";
+  gap: 20px;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  background-color: #2f3542;
+  margin-left: 20px;
+}
+
+nav {
+  grid-area: nav;
+  margin-right: 20px;
+}
+
+footer {
+  grid-area: footer;
+}
+
+article {
+  margin-left: 20px;
+  padding: 30px 20px;
+}
+
+.profile {
+  padding: 20px;
+  height: 457px;
+  background-color: #dfe4ea;
+}
+
+.profile_img {
+  height: 250px;
+  background: url("../img/shutterstock_306809918.png") no-repeat center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.profile_cont {
+  margin-top: 25px;
+  padding-top: 25px;
+  font-size: 14px;
+}
+
+.category {
+  margin-top: 20px;
+  padding: 30px 20px;
+  height: calc(100% - 457px - 20px);
+  background-color: #dfe4ea;
+}
+
+.category-title {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  background-color: #fff;
+}
+
+.category-list > li {
+  flex: 1 1 50%;
+}
+
+.category-icon {
+  display: block;
+  width: 100%;
+  height: 148px;
+  border: 1px solid black;
+}
+
+.category-icon > i {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+i.icon-html {
+  background: url("../img/html.svg") no-repeat center;
+  background-size: cover;
+}
+
+i.icon-css {
+  background: url("../img/css.svg") no-repeat center;
+  background-size: cover;
+}
+
+i.icon-react {
+  background: url("../img/react.svg") no-repeat center;
+  background-size: cover;
+}
+
+i.icon-node {
+  background: url("../img/node.svg") no-repeat center;
+  background-size: cover;
+}
+
+footer {
+  background-color: #2f3542;
+  padding: 50px;
+  color: #dfe4ea;
+}
+
+@media screen and (max-width: 1440px) {
+  header {
+    height: 20.83vw;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 9fr minmax(23.26vw, auto);
+    grid-template-rows: 20.8vw minmax(48.68vw, auto) 13.88vw;
+  }
+
+  article {
+    margin-left: 1.38vw;
+    padding: 2.08vw 1.38vw;
+  }
+
+  .profile {
+    padding: 1.38vw;
+    height: 31.7vw;
+  }
+
+  .profile_img {
+    height: 17.36vw;
+    border-radius: 1.38vw;
+  }
+
+  .profile_cont {
+    margin-top: 1.73vw;
+    padding-top: 1.73vw;
+    font-size: 0.97vw;
+  }
+
+  .category {
+    margin-top: 1.38vw;
+    padding: 2.08vw 1.38vw;
+    height: calc(100% - 31.73vw - 1.38vw);
+  }
+
+  .category-title {
+    font-size: 1.66vw;
+  }
+
+  .category-list {
+    margin-top: 1.25vw;
+  }
+
+  .category-icon {
+    height: 10.27vw;
+  }
+}
