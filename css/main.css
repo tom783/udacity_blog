@@ -1,3 +1,7 @@
+@import "./reset.css";
+@import "./default.css";
+@import "./typography.css";
+
 .post {
   max-width: 1590px;
   margin: 0 auto;

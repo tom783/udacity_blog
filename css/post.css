@@ -1,3 +1,7 @@
+@import "./reset.css";
+@import "./default.css";
+@import "./typography.css";
+
 .post {
   max-width: 1440px;
   margin: 0 auto;
@@ -8,8 +12,6 @@
 
 .post-cont-bg {
   height: 260px;
-  background: url("../img/postCont_p.svg") no-repeat center;
-  background-size: cover;
 }
 
 .post-cont {
@@ -23,6 +25,10 @@
 p.date {
   font-size: 24px;
   text-align: right;
+}
+
+.share-link > a {
+  color: blue;
 }
 
 .cont-text {

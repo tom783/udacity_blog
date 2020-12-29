@@ -20,6 +20,26 @@ header {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-detail {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.profile:hover + .profile-detail {
+  visibility: visible;
+  opacity: 1;
 }
 
 nav {
@@ -95,6 +115,12 @@ footer {
     height: 26.04vw;
   }
 
+  .profile-detail {
+    width: 52.08vw;
+    padding: 2.6vw;
+    font-size: 2.24vw;
+  }
+
   nav > ul > li + li {
     margin-left: 13.02vw;
   }
@@ -140,6 +166,11 @@ footer {
     background: url("../img/profile_m.svg") no-repeat center;
     width: 100px;
     height: 100px;
+  }
+
+  .profile-detail {
+    width: 200px;
+    padding: 20px;
   }
 
   nav > ul > li + li {

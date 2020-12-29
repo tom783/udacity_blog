@@ -1,63 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/default.css">
-  <link rel="stylesheet" href="../css/post.css">
-  <title>Blog</title>
-</head>
-<body>
-  <div class="grid-wrap">
-    <header>
-      <div class="profile">
-       </div>
-    </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="../index.html">Home</a>
-        </li>
-        <li class="active">
-          <a href="#">Post</a>
-        </li>
-      </ul>
-    </nav> 
-    <main>
-      <div class="post">
-        <div class="post-cont-bg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/post.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <div class="grid-wrap">
+      <header>
+        <div class="profile"></div>
+        <div class="profile-detail">
+          <u>Hello, I'm hj.lee</u>
+          <ul>
+            <li>company - 000 company</li>
+            <li>career - 000 company 1y, xxx company 2y</li>
+          </ul>
         </div>
-        <div class="post-cont">
-          <h2>title</h2>
-          <p class="date">2020.12.29. <span class="time">12:03</span></p>
-          <div class="cont-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aliquid aut ex minima laboriosam doloremque accusamus corporis ipsa necessitatibus inventore, impedit sunt tenetur voluptate suscipit magni unde quasi, molestias obcaecati?
-            Est aspernatur excepturi aliquam sint reiciendis architecto reprehenderit illo nulla nemo doloribus eveniet esse rerum veniam ratione hic, laudantium molestiae amet quos nostrum iusto sit, natus quod vero sapiente? Distinctio.
-            Ut nobis expedita vel explicabo eligendi error quas modi aut sequi veniam minus commodi doloribus obcaecati qui, maiores officia porro ab aliquid cum quasi debitis, atque nostrum assumenda rerum. Illo.
-            Perferendis, blanditiis deserunt! Odio ex omnis culpa ad doloribus deserunt necessitatibus? Minus praesentium, enim accusantium vel, libero adipisci iste dolore suscipit explicabo eum magnam sequi quidem ipsam sapiente voluptates eos.
-            Nostrum tempore officia tenetur sint obcaecati qui deleniti cupiditate esse non totam? Perferendis quia accusantium similique quae laboriosam explicabo ipsam rerum nihil nemo corrupti itaque quas deserunt, atque at? Eius.
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="active">
+            <a href="#">Post</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="post">
+          <div class="post-cont-bg">
+            <img
+              src="../img/postCont_p.svg"
+              alt="shining start and a snow mountain"
+            />
+          </div>
+          <div class="post-cont">
+            <h2>title</h2>
+            <p class="date">
+              2020.12.29. <em class="time">12:03.</em> by hj.lee
+            </p>
+            <div class="share-link">
+              <b>Share -</b>
+              <a href="#">facebook</a>
+              <a href="#">linkedin</a>
+            </div>
+            <div class="cont-text">
+              <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis aliquid aut ex minima laboriosam doloremque accusamus
+              corporis ipsa necessitatibus inventore, impedit sunt tenetur
+              voluptate suscipit magni unde quasi, molestias obcaecati? Est
+              aspernatur excepturi aliquam sint reiciendis architecto
+              reprehenderit illo nulla nemo doloribus eveniet esse rerum veniam
+              ratione hic, laudantium molestiae amet quos nostrum iusto sit,
+              natus quod vero sapiente? Distinctio. Ut nobis expedita vel
+              explicabo eligendi error quas modi aut sequi veniam minus commodi
+              doloribus obcaecati qui, maiores officia porro ab aliquid cum
+              quasi debitis, atque nostrum assumenda rerum. Illo. Perferendis,
+              blanditiis deserunt! Odio ex omnis culpa ad doloribus deserunt
+              necessitatibus? Minus praesentium, enim accusantium vel, libero
+              adipisci iste dolore suscipit explicabo eum magnam sequi quidem
+              ipsam sapiente voluptates eos. Nostrum tempore officia tenetur
+              sint obcaecati qui deleniti cupiditate esse non totam? Perferendis
+              quia accusantium similique quae laboriosam explicabo ipsam rerum
+              nihil nemo corrupti itaque quas deserunt, atque at? Eius.
+              <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 50 years, WWF has been protecting the future of nature. The
+                world's leading conservation organization, WWF works in 100
+                countries and is supported by 1.2 million members in the United
+                States and close to 5 million globally.
+              </blockquote>
+            </div>
+          </div>
+          <div class="post-list-control">
+            <a href="#" class="prev">< prev</a>
+            <a href="../index.html" class="go-list">go llist</a>
+            <a href="#" class="next">next ></a>
           </div>
         </div>
-        <div class="post-list-control">
-          <a href="#" class="prev">< prev</a>
-          <a href="../index.html" class="go-list">go llist</a>
-          <a href="#" class="next">next ></a>
-        </div>
-      </div>
-    </main>  
-    <footer>
-      <p class="copyright">
-        @copyright. hj.lee
-      </p>
-      <ul class="link-list">
-        <li>
-          <a href="https://github.com/tom783" target="_blank">
-            <span class="git footer-icon"></span>
-          </a>
-        </li>
-      </ul>
-    </footer>
-  </div>
-</body>
+      </main>
+      <footer>
+        <p class="copyright">@copyright. hj.lee</p>
+        <ul class="link-list">
+          <li>
+            <a href="https://github.com/tom783" target="_blank">
+              <span class="git footer-icon"></span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>
