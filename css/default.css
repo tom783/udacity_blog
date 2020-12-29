@@ -1,175 +1,173 @@
-header {
-  height: 300px;
-  background: url("../img/towards-the-garden-1269304_1920.jpg") no-repeat center;
-  background-size: cover;
-}
-
-.grid-container {
+.grid-wrap {
   display: grid;
-  grid-template-columns: 1085px 335px;
-  grid-template-rows: 300px minmax(701px, auto) 200px;
-  grid-template-areas:
-    "header header"
-    "main nav"
-    "footer footer";
-  gap: 20px;
-  justify-content: center;
-  min-height: 100vh;
+  grid-template-rows: 382px 42px minmax(600px, auto) 200px;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
 }
 
 header {
-  grid-area: header;
-}
-
-main {
-  grid-area: main;
-  background-color: #2f3542;
-  margin-left: 20px;
-}
-
-nav {
-  grid-area: nav;
-  margin-right: 20px;
-}
-
-footer {
-  grid-area: footer;
-}
-
-article {
-  margin-left: 20px;
-  padding: 30px 20px;
+  position: relative;
+  background: url("../img/bg_p.svg") no-repeat center;
+  background-size: cover;
 }
 
 .profile {
-  padding: 20px;
-  height: 457px;
-  background-color: #dfe4ea;
+  position: absolute;
+  background: url("../img/profile_p.svg") no-repeat center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
 
-.profile_img {
-  height: 250px;
-  background: url("../img/shutterstock_306809918.png") no-repeat center;
-  background-size: cover;
-  border-radius: 20px;
+nav {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-.profile_cont {
-  margin-top: 25px;
-  padding-top: 25px;
-  font-size: 14px;
-}
-
-.category {
-  margin-top: 20px;
-  padding: 30px 20px;
-  height: calc(100% - 457px - 20px);
-  background-color: #dfe4ea;
-}
-
-.category-title {
-  width: 100%;
-  font-size: 24px;
-  text-align: center;
-}
-
-.category-list {
+nav > ul {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 18px;
-  background-color: #fff;
-}
-
-.category-list > li {
-  flex: 1 1 50%;
-}
-
-.category-icon {
-  display: block;
-  width: 100%;
-  height: 148px;
-  border: 1px solid black;
-}
-
-.category-icon > i {
-  display: block;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
-i.icon-html {
-  background: url("../img/html.svg") no-repeat center;
-  background-size: cover;
+nav > ul > li + li {
+  margin-left: 300px;
 }
 
-i.icon-css {
-  background: url("../img/css.svg") no-repeat center;
-  background-size: cover;
+nav > ul > li > a {
+  display: block;
+  height: 100%;
 }
 
-i.icon-react {
-  background: url("../img/react.svg") no-repeat center;
-  background-size: cover;
-}
-
-i.icon-node {
-  background: url("../img/node.svg") no-repeat center;
-  background-size: cover;
+nav > ul > li.active > a {
+  text-decoration: underline;
 }
 
 footer {
-  background-color: #2f3542;
-  padding: 50px;
-  color: #dfe4ea;
+  padding: 24px;
+  background-color: #000;
 }
 
-@media screen and (max-width: 1440px) {
+.copyright {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.link-list {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-list > li {
+  padding: 0 10px;
+}
+
+.footer-icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.git {
+  background: url("../img/git_p.svg") no-repeat center;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-wrap {
+    grid-template-rows: 250px 42px minmax(350px, auto) 100px;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
   header {
-    height: 20.83vw;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 9fr minmax(23.26vw, auto);
-    grid-template-rows: 20.8vw minmax(48.68vw, auto) 13.88vw;
-  }
-
-  article {
-    margin-left: 1.38vw;
-    padding: 2.08vw 1.38vw;
+    background: url("../img/bg_t.svg") no-repeat center;
   }
 
   .profile {
-    padding: 1.38vw;
-    height: 31.7vw;
+    background: url("../img/profile_t.svg") no-repeat center;
+    width: 26.04vw;
+    height: 26.04vw;
   }
 
-  .profile_img {
-    height: 17.36vw;
-    border-radius: 1.38vw;
+  nav > ul > li + li {
+    margin-left: 13.02vw;
   }
 
-  .profile_cont {
-    margin-top: 1.73vw;
-    padding-top: 1.73vw;
-    font-size: 0.97vw;
+  footer {
+    padding: 1.3vw;
   }
 
-  .category {
-    margin-top: 1.38vw;
-    padding: 2.08vw 1.38vw;
-    height: calc(100% - 31.73vw - 1.38vw);
+  .copyright {
+    font-size: 2.34vw;
   }
 
-  .category-title {
-    font-size: 1.66vw;
+  .link-list {
+    margin-top: 1.3vw;
   }
 
-  .category-list {
-    margin-top: 1.25vw;
+  .link-list > li {
+    padding: 0 1.3vw;
   }
 
-  .category-icon {
-    height: 10.27vw;
+  .footer-icon {
+    width: 6.51vw;
+    height: 6.51vw;
+  }
+
+  .git {
+    background: url("../img/git_m.svg") no-repeat center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .grid-wrap {
+    grid-template-rows: 174px 42px minmax(350px, auto) 100px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  header {
+    background: url("../img/bg_m.svg") no-repeat center;
+  }
+
+  .profile {
+    background: url("../img/profile_m.svg") no-repeat center;
+    width: 100px;
+    height: 100px;
+  }
+
+  nav > ul > li + li {
+    margin-left: 30px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .copyright {
+    font-size: 18px;
+  }
+
+  .link-list {
+    margin-top: 10px;
+  }
+
+  .link-list > li {
+    padding: 0 10px;
+  }
+
+  .footer-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .git {
+    background: url("../img/git_m.svg") no-repeat center;
   }
 }

@@ -1,71 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/default.css" />
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/post.css" />
-    <title>Welcome My Blog</title>
-  </head>
-  <body>
-    <div class="grid-container">
-      <header></header>
-      <main>
-        <div class="post">
-          <h2 class="post-title">temp title</h2>
-          <div class="post-info">
-            <span class="date">2020.12.21.</span>
-          </div>
-          <div class="post-cont">
-            <strong>Lorem</strong> ipsum dolor, sit amet consectetur adipisicing
-            elit. Similique rerum exercitationem inventore harum velit
-            accusantium molestias dolores unde voluptatem nesciunt veritatis
-            quia quidem neque vitae deserunt, repellendus voluptatum illum
-            molestiae?
-          </div>
-          <div class="back-page">
-            <a href="../index.html">back</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="../css/post.css">
+  <title>Blog</title>
+</head>
+<body>
+  <div class="grid-wrap">
+    <header>
+      <div class="profile">
+       </div>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="active">
+          <a href="#">Post</a>
+        </li>
+      </ul>
+    </nav> 
+    <main>
+      <div class="post">
+        <div class="post-cont-bg">
+        </div>
+        <div class="post-cont">
+          <h2>title</h2>
+          <p class="date">2020.12.29. <span class="time">12:03</span></p>
+          <div class="cont-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aliquid aut ex minima laboriosam doloremque accusamus corporis ipsa necessitatibus inventore, impedit sunt tenetur voluptate suscipit magni unde quasi, molestias obcaecati?
+            Est aspernatur excepturi aliquam sint reiciendis architecto reprehenderit illo nulla nemo doloribus eveniet esse rerum veniam ratione hic, laudantium molestiae amet quos nostrum iusto sit, natus quod vero sapiente? Distinctio.
+            Ut nobis expedita vel explicabo eligendi error quas modi aut sequi veniam minus commodi doloribus obcaecati qui, maiores officia porro ab aliquid cum quasi debitis, atque nostrum assumenda rerum. Illo.
+            Perferendis, blanditiis deserunt! Odio ex omnis culpa ad doloribus deserunt necessitatibus? Minus praesentium, enim accusantium vel, libero adipisci iste dolore suscipit explicabo eum magnam sequi quidem ipsam sapiente voluptates eos.
+            Nostrum tempore officia tenetur sint obcaecati qui deleniti cupiditate esse non totam? Perferendis quia accusantium similique quae laboriosam explicabo ipsam rerum nihil nemo corrupti itaque quas deserunt, atque at? Eius.
           </div>
         </div>
-      </main>
-      <nav>
-        <div class="profile">
-          <div class="profile_img"></div>
-          <div class="profile_cont">
-            <p>
-              Hello, I'm frontend developer.<br />I love my work.<br />Have a
-              nice day.
-            </p>
-          </div>
+        <div class="post-list-control">
+          <a href="#" class="prev">< prev</a>
+          <a href="../index.html" class="go-list">go llist</a>
+          <a href="#" class="next">next ></a>
         </div>
-        <div class="category">
-          <h2 class="category-title">category</h2>
-          <ul class="category-list">
-            <li>
-              <a href="#" class="category-icon">
-                <i class="icon-html"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category-icon">
-                <i class="icon-css"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category-icon">
-                <i class="icon-react"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="category-icon">
-                <i class="icon-node"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <footer>@copyright hj.lee. 2020.12.21.</footer>
-    </div>
-  </body>
+      </div>
+    </main>  
+    <footer>
+      <p class="copyright">
+        @copyright. hj.lee
+      </p>
+      <ul class="link-list">
+        <li>
+          <a href="https://github.com/tom783" target="_blank">
+            <span class="git footer-icon"></span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
 </html>

@@ -1,102 +1,140 @@
-main {
-  padding: 20px;
-}
-
 .post {
+  max-width: 1440px;
+  margin: 0 auto;
   position: relative;
-  padding: 20px;
-  height: 100%;
-  background-color: #dfe4ea;
+  border: 1px solid black;
+  padding-bottom: 75px;
 }
 
-.post-title {
-  text-indent: 10px;
-  line-height: 50px;
-  font-size: 24px;
-  border-bottom: 1px solid #2f3542;
-}
-
-.post-info {
-  font-size: 18px;
-  margin-top: 10px;
-  text-align: right;
+.post-cont-bg {
+  height: 260px;
+  background: url("../img/postCont_p.svg") no-repeat center;
+  background-size: cover;
 }
 
 .post-cont {
-  font-size: 18px;
-  margin-top: 10px;
+  padding: 30px 40px;
 }
 
-.back-page {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  padding-left: 20px;
+.post-cont > h2 {
+  font-size: 36px;
 }
 
-.back-page::before {
-  content: "";
+p.date {
+  font-size: 24px;
+  text-align: right;
+}
+
+.cont-text {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.post-list-control {
   position: absolute;
+  bottom: 0;
   left: 0;
-  top: 50%;
-  width: 10px;
-  height: 1px;
-  background-color: black;
-  transform: rotate(-45deg) translateY(-5px);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.back-page::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 10px;
-  height: 1px;
-  background-color: black;
-  transform: rotate(45deg) translateY(5px);
+.post-list-control > a {
+  font-size: 24px;
 }
 
-@media screen and (max-width: 1440px) {
-  main {
-    padding: 1.38vw;
-  }
-
+@media screen and (max-width: 1920px) {
   .post {
-    padding: 1.38vw;
+    max-width: 75vw;
+    padding-bottom: 3.9vw;
   }
 
-  .post-title {
-    text-indent: 0.69vw;
-    line-height: 3.47vw;
-    font-size: 1.66vw;
-  }
-
-  .post-info {
-    font-size: 1.25vw;
-    margin-top: 0.69vw;
+  .post-cont-bg {
+    height: 13.54vw;
   }
 
   .post-cont {
-    font-size: 1.25vw;
-    margin-top: 0.69vw;
+    padding: 1.56vw 2.08vw;
   }
 
-  .back-page {
-    right: 1.38vw;
-    bottom: 1.38vw;
-    font-size: 1.38vw;
-    padding-left: 1.38vw;
+  .post-cont > h2 {
+    font-size: 30px;
   }
 
-  .back-page::before {
-    width: 0.69vw;
-    transform: rotate(-45deg) translateY(-0.34vw);
+  p.date {
+    font-size: 24px;
   }
 
-  .back-page::after {
-    width: 0.69vw;
-    transform: rotate(45deg) translateY(0.34vw);
+  .cont-text {
+    margin-top: 2.6vw;
+    font-size: 24px;
+  }
+
+  .post-list-control > a {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post {
+    max-width: 100%;
+    padding-bottom: 5.2vw;
+  }
+
+  .post-cont-bg {
+    height: 20.18vw;
+    background: url("../img/postCont_t.svg") no-repeat center;
+  }
+
+  .post-cont {
+    padding: 2.6vw 3.9vw;
+  }
+
+  .post-cont > h2 {
+    font-size: 24px;
+  }
+
+  p.date {
+    font-size: 20px;
+  }
+
+  .cont-text {
+    margin-top: 3.9vw;
+    font-size: 20px;
+  }
+  .post-list-control > a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .post {
+    padding-bottom: 40px;
+  }
+
+  .post-cont-bg {
+    height: 155px;
+    background: url("../img/post_m.svg") no-repeat center;
+  }
+
+  .post-cont {
+    padding: 20px 12px;
+  }
+
+  .post-cont > h2 {
+    font-size: 24px;
+  }
+
+  p.date {
+    font-size: 18px;
+  }
+
+  .cont-text {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  .post-list-control > a {
+    font-size: 12px;
   }
 }
